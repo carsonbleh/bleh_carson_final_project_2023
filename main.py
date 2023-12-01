@@ -10,4 +10,4 @@ Game ends when snake hits wall
 Gain points when snake eats apple
 '''
 
-# ouyguhg
+#ojwfiwbfbfry
