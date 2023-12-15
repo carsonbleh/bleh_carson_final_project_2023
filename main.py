@@ -10,6 +10,15 @@ Game ends when snake hits wall or hits itself
 Gain points when snake eats apple
 '''
 
+'''
+Sources:
+[Chris Bradfield - Kids can code](https://kidscancode.org/)
+[freeCodeCamp.org](https://www.youtube.com/watch?v=8dfePlONtls)
+[Coder Space](https://www.youtube.com/watch?v=_-KjEgCLQFw)
+[Wajiha Urooj](https://www.edureka.co/blog/snake-game-with-pygame/)
+[Stack Overflow](https://stackoverflow.com/questions/33537959/continuous-movement-of-a-box-in-pygame)
+'''
+
 import pygame
 import random
 from sprites import *
@@ -88,12 +97,12 @@ def Intro():
         IntroFont = pygame.font.SysFont("comicsansms", 20)
         IntroFont1 = pygame.font.SysFont("comicsansms", 40)
         msg1 = IntroFont1.render("WELCOME TO SNAKES", 1, WHITE)
-        msg2 = IntroFont.render("To Win - Collect The Apples", 1, WHITE)
+        msg2 = IntroFont.render("Collect The Apples", 1, WHITE)
         msg3 = IntroFont.render("Press 1 to Play", 1, WHITE)
 
         Screen.blit(msg1, (25, 100))
-        Screen.blit(msg2, (125, 150))
-        Screen.blit(msg3, (120, 250))
+        Screen.blit(msg2, (155, 150))
+        Screen.blit(msg3, (175, 250))
         pygame.display.update()
 
         for event in pygame.event.get():
@@ -139,8 +148,8 @@ def SinglePlayer():
             pygame.draw.rect(Screen, WHITE, pygame.Rect(section[0], section[1], 15, 15))
 
 
-        # If statement triggered after a 'Game ending collision'. Player score is displayed on Screen
-        # Screen updated and time delay added to display score for 2 seconds.
+        # If statement triggered after a Game ending collision, Player score is displayed on Screen
+        # Screen updated and time delay added to display score for 2 seconds
         if player.Collisions():
             EndStatement()
             MyFont = pygame.font.SysFont("Helvetica", 40)
@@ -151,7 +160,7 @@ def SinglePlayer():
             pygame.time.delay(2000)
             GameEnd()
 
-        # Messages displayed on the screen all the way through the game.
+        # Messages displayed on the screen all the way through the game
         MyFont1 = pygame.font.SysFont("Helvetica", 15)
         ScoreBoard1 = MyFont1.render("Score: " + str(score), 1, BLACK)
         PauseMessage = MyFont1.render("Press P to Pause", 1, BLACK)

@@ -46,3 +46,4 @@ Inspiration, code snippets, etc.
 [freeCodeCamp.org](https://www.youtube.com/watch?v=8dfePlONtls)
 [Coder Space](https://www.youtube.com/watch?v=_-KjEgCLQFw)
 [Wajiha Urooj](https://www.edureka.co/blog/snake-game-with-pygame/)
+[Stack Overflow](https://stackoverflow.com/questions/33537959/continuous-movement-of-a-box-in-pygame)

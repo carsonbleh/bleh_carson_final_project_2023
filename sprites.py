@@ -36,7 +36,8 @@ class Player(pygame.sprite.Sprite):
         if self.direction == "DOWN":
             self.position[1] += self.Speed
         # This inserts the position to the snakes body when snake hits the block
-        # If snake doesnt hit food, the last element of the body is removed stopping the snake getting constantly longer
+        # When food is hit, an element is added to the list, growing the snake 
+        # If snake doesnt hit food, the last element of the body is removed stopping the snake from getting constantly longer
         self.Snake.insert(0, list(self.position))
         # This translates the apples position from one point in the middle to the whole image
         # abs = absolute value of the x and y distances
